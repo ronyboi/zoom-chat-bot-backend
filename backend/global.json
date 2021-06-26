@@ -4,6 +4,14 @@
             {
                 "command": "Reminder",
                 "description": "Exam next week!"
+            },
+            {
+                "command": "Homework",
+                "description": "Due on the 27th"
+            },
+            {
+                "command": "Midterm",
+                "description": "PLEASE STUDY FOR IT!"
             }
         ],
         "faqs": [
@@ -16,6 +24,10 @@
             {
                 "command": "hi",
                 "description": "Welcome to the clas my child!"
+            },
+            {
+                "command": "sannat",
+                "description": "he's a wizard harry"
             }
         ],
         "queueCommands": [],
