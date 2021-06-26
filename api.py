@@ -68,6 +68,15 @@ def create_meeting():
     return (STATUS_OK)
 
 
+@app.get('/api/local/all')
+def get_all_meetings():
+    if os.path.getsize(LOCAL_FILE) == 0:
+        return (STATUS_ERR)
+    with open(LOCAL_FILE, "r") as f:
+        data = json.load(f)
+    return data
+
+
 @app.get('/api/local/')
 def get_meeting():
     record = json.loads(request.data)
@@ -85,20 +94,18 @@ def get_meeting():
         return added
 
 
-@app.delete('/api/local/')
-def delete_meeting():
-    record = json.loads(request.data)
-    print(record)  #debugging
+@app.delete('/api/local/<meetingId>')
+def delete_meeting(meetingId):
     if os.path.getsize(LOCAL_FILE) == 0:
         return (STATUS_ERR)
     with open(LOCAL_FILE, "r") as f:
         data = json.load(f)
         try:
-            deleted = data[record["meetingId"]]
+            deleted = data[meetingId]
         except KeyError:
             return (STATUS_ERR)
     with open(LOCAL_FILE, "w") as f:
-        data.pop(record["meetingId"])
+        data.pop(meetingId)
         json.dump(data, f, indent=4, sort_keys=True)
     return (STATUS_OK)
 
