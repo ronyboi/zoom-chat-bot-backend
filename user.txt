@@ -1,0 +1,1 @@
+{"meetingName": "Sannat Bhassin's Meeting Room", "meetingId": "1287382437", "meetingCode": "isuckdickforlyfe", "settings": {"wakeWord": "/", "faqs": {"When is the exam?": "29th March"}, "announcements": ["Reminder: MIDTEM NEXT WEEK!"], "textCommands": {"hi": "Welcome to the class my child!"}, "queueCommands": ["queue", "show"]}}

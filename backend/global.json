@@ -1,0 +1,24 @@
+{
+    "settings": {
+        "announcements": [
+            {
+                "command": "Reminder",
+                "description": "Exam next week!"
+            }
+        ],
+        "faqs": [
+            {
+                "command": "THIS IS A GLOBAL SCENARIO",
+                "description": "next week"
+            }
+        ],
+        "textCommands": [
+            {
+                "command": "hi",
+                "description": "Welcome to the clas my child!"
+            }
+        ],
+        "queueCommands": [],
+        "wakeWord": "/"
+    }
+}

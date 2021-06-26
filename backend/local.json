@@ -1,0 +1,27 @@
+{
+    "1231231": {
+        "meetingCode": "something",
+        "meetingId": "1231231",
+        "meetingName": "somthingname",
+        "settings": {
+            "announcements": [
+                {
+                    "Reminder": "MIDTERM NEXT WEEK"
+                }
+            ],
+            "faqs": [
+                {
+                    "command": "When is the exam?",
+                    "description": "next week"
+                }
+            ],
+            "textCommands": [
+                {
+                    "command": "hi",
+                    "description": "Welcome to the clas my child!"
+                }
+            ],
+            "wakeWord": "/"
+        }
+    }
+}
